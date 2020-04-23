@@ -37,7 +37,7 @@ async function awaitAll(arr) {
 }
 
 const makeHasuraRequest = async (url, mutation, variables, headers) =>
-  await fetch("http://localhost:8080/v1/graphql", {
+  await fetch(url, {
     headers,
     method: "POST",
     body: JSON.stringify({
