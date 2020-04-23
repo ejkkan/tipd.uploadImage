@@ -37,7 +37,7 @@ async function awaitAll(arr) {
 }
 
 const makeHasuraRequest = async (url, mutation, variables, headers) =>
-  await fetch(url, {
+  await fetch("https://tipd.herokuapp.com/v1/graphql", {
     headers,
     method: "POST",
     body: JSON.stringify({
